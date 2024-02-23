@@ -1,6 +1,6 @@
 # rhizo-embed
 
-This is a rhizomatic tool for searching for, storing, and embedding sources of all kinds within the Rhizome.
+This is a rhizomatic tool for searching for, storing, and embedding sources of all kinds within the Rhizome. WIP, currently just building in public and experimenting.
 
 It is intended as a tool to be used within a larger project and thus has a Flask api to hit with a web app, but it also contains a gradio app for standalone use and debugging purposes.
 
