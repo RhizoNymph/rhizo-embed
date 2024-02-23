@@ -1,5 +1,5 @@
 import gradio as gr
-from search.scihub import search_authors, search_pubs
+from search.scholar import search_authors, search_pubs
 from load.scihub import download_paper
 from search.arxiv import general_search
 import json
