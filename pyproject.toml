@@ -1,0 +1,36 @@
+[project]
+name = "rhizo-embed"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Nymph", email = "quantnymph@gmail.com" }
+]
+dependencies = [
+    "scidownl>=1.0.2",
+    "requests>=2.31.0",
+    "youtube-transcript-api>=0.6.2",
+    "youtube-search>=2.1.2",
+    "scholarly>=1.7.11",
+    "wikipedia>=1.4.0",
+    "gradio>=4.19.1",
+    "arxiv>=2.1.0",
+]
+readme = "README.md"        
+requires-python = ">= 3.8"
+
+[project.scripts]
+hello = "rhizome_embed:hello"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/rhizome_embed"]
