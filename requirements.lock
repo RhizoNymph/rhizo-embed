@@ -37,6 +37,7 @@ beautifulsoup4==4.12.3
 bibtexparser==1.4.1
     # via scholarly
 certifi==2024.2.2
+    # via elastic-transport
     # via httpcore
     # via httpx
     # via requests
@@ -58,6 +59,10 @@ deprecated==1.2.14
 docutils==0.20.1
     # via sphinx
     # via sphinx-rtd-theme
+elastic-transport==8.12.0
+    # via elasticsearch
+elasticsearch==8.12.1
+    # via rhizo-embed
 fake-useragent==1.4.0
     # via scholarly
 fastapi==0.109.2
@@ -281,6 +286,7 @@ typing-extensions==4.9.0
 tzdata==2024.1
     # via pandas
 urllib3==2.2.0
+    # via elastic-transport
     # via requests
     # via selenium
 uvicorn==0.27.1
