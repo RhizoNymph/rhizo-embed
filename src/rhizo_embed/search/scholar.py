@@ -9,11 +9,11 @@ def search_authors(author_name, top_n=3):
             author = next(search_query)
             filled_author = scholarly.fill(author)
             
-            for field in ["container_type", "filled", "source"]:
+            for field in ["container_type", "filled", "source", "coauthors"]:
                 if field in filled_author:
                     del filled_author[field]
             
-            for field_list in ["coauthors", "publications"]:
+            for field_list in ["publications"]:
                 if field_list in filled_author:
                     for entry in filled_author[field_list]:
                         for field in ["container_type", "filled", "source"]:
