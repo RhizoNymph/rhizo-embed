@@ -93,7 +93,7 @@ with gr.Blocks() as app:
 
     search_author_btn.click(search_and_display, inputs=[input_text, search_type_author], outputs=[markdown_link1, output_json1, markdown_link2, output_json2, markdown_link3, output_json3])
     search_pub_btn.click(search_and_display, inputs=[input_text, search_type_publication], outputs=[markdown_link1, output_json1, markdown_link2, output_json2, markdown_link3, output_json3])
-    download_paper_btn.click(download_and_show_status, inputs=[input_text], outputs=[])
+    #download_paper_btn.click(download_and_show_status, inputs=[input_text], outputs=[])
     search_arxiv_btn.click(search_arxiv_and_display, inputs=[input_text], outputs=[markdown_link1, output_json1, markdown_link2, output_json2, markdown_link3, output_json3])
     
 app.launch()
