@@ -7,3 +7,12 @@ It is intended as a tool to be used within a larger project and thus has a Flask
 Right now it supports searching for author information on Google Scholar and for publications on GS or on Arxiv. I will add, um, everything I possibly can.
 
 Package management done with rye.
+
+Search author:
+![Search Author](search_author.png)
+
+Search pubs:
+![Search Pubs](search_pubs.png)
+
+Search arxiv:
+![Search Arxiv](search_arxiv.png)
