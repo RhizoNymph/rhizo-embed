@@ -8,6 +8,11 @@ Right now it supports searching for author information on Google Scholar and for
 
 Package management done with rye.
 
+Tips:
+- When searching pubs on Scholar, sometimes it wont work because of anti-bot stuff. Try again later, idk.
+- When searching pubs on Arxiv, you need to include the author for good search results.
+- The links go to pdfs when searching pubs and author's homepage (if present on scholar) when searching authors
+
 Search author:
 ![Search Author](search_author.png)
 
