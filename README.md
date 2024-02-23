@@ -1,6 +1,7 @@
 # rhizo-embed
 
-This is a rhizomatic tool for searching for, storing, and embedding sources of all kinds within the Rhizome. WIP, currently just building in public and experimenting.
+This is a rhizomatic tool for searching for, storing, and embedding sources of all kinds within the Rhizome. 
+WIP, currently just building in public and experimenting. Lacks Elasticsearch loading and ColBERTv2 index embedding.
 
 It is intended as a tool to be used within a larger project and thus has a Flask api to hit with a web app, but it also contains a gradio app for standalone use and debugging purposes.
 
