@@ -35,7 +35,7 @@ def search_arxiv_and_display(query, top_n):
     
     return markdown_content
 
-results_markdown = gr.Markdown()
+
 
 with gr.Blocks() as app:
     gr.Markdown("##### Search for Authors, Publications, or arXiv Papers")
@@ -47,12 +47,12 @@ with gr.Blocks() as app:
         search_author_btn = gr.Button("Search Author on Scholar")
         search_pub_btn = gr.Button("Search Publication on Scholar")
     
-    
+    results_markdown = gr.Markdown()
     search_author_btn.click(search_and_display, inputs=[input_text, gr.Textbox(value="author", visible=False), top_n_slider], outputs=results_markdown)
     search_pub_btn.click(search_and_display, inputs=[input_text, gr.Textbox(value="publication", visible=False), top_n_slider], outputs=results_markdown)
     search_arxiv_btn.click(search_arxiv_and_display, inputs=[input_text, top_n_slider], outputs=results_markdown)
     
     # Define a single Markdown component for displaying results
-    results_markdown
+    app.add(results_markdown)
     
 app.launch()
